@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfbf7;
+  --foreground: #2d2d2d;
+  --sage: #7c9082;
+  --sage-dark: #5f7265;
+  --sage-light: #a8b8ad;
+  --cream: #fdfbf7;
+  --birch: #f5f0e8;
+  --amber: #c8923d;
+  --amber-dark: #a6752f;
+  --charcoal: #2d2d2d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sage: var(--sage);
+  --color-sage-dark: var(--sage-dark);
+  --color-sage-light: var(--sage-light);
+  --color-cream: var(--cream);
+  --color-birch: var(--birch);
+  --color-amber: var(--amber);
+  --color-amber-dark: var(--amber-dark);
+  --color-charcoal: var(--charcoal);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--sage) 30%, transparent);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
