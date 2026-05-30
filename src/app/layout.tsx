@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "child care Leawood",
     "Montessori preschool Kansas City",
     "nature-based childcare",
-    "infant daycare near me",
+    "preschool ages 2.5 to 5",
     "Pre-K program Kansas City",
     "best daycare Overland Park",
   ],

@@ -19,8 +19,8 @@ export function ProgramsOverview() {
   return (
     <Section background="birch">
       <SectionHeading
-        title="Programs for Every Stage"
-        subtitle="From first smiles to kindergarten-ready confidence, we nurture development at every age."
+        title="Preschool & Pre-K Programs"
+        subtitle="Boutique early education for children ages 2.5 to 5 in Johnson County"
       />
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {programs.map((program, index) => {

@@ -13,7 +13,7 @@ import { CTASection } from "@/components/shared/cta-section";
 export const metadata: Metadata = {
   title: "Programs",
   description:
-    "Explore our age-specific programs from infants through Pre-K. Play-based, nature-inspired early learning in Johnson County, Kansas.",
+    "Preschool and Pre-K programs for children ages 2.5 to 5. Play-based, nature-inspired early learning in Johnson County, Kansas.",
 };
 
 export default function ProgramsPage() {
@@ -21,7 +21,7 @@ export default function ProgramsPage() {
     <>
       <PageHero
         title="Our Programs"
-        subtitle="Purposeful, play-based learning for every stage from 6 weeks to Pre-K"
+        subtitle="Purposeful, play-based learning for children ages 2.5 to 5"
         image="https://images.unsplash.com/photo-1587654787591-70c8d94be832?w=1920&h=600&fit=crop"
         imageAlt="Children engaged in learning activities at Birch Learning Academy"
       />

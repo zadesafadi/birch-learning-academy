@@ -126,12 +126,9 @@ export function ContactForm({
             )}
           >
             <option value="">Select age range</option>
-            <option value="infant">Infant (6 weeks – 12 months)</option>
-            <option value="toddler">Toddler (12 – 24 months)</option>
-            <option value="early-preschool">Early Preschool (2 – 3 years)</option>
-            <option value="preschool">Preschool (3 – 4 years)</option>
+            <option value="preschool">Preschool (2.5 – 4 years)</option>
             <option value="pre-k">Pre-K (4 – 5 years)</option>
-            <option value="expecting">Expecting / Not yet born</option>
+            <option value="waitlist">Under 2.5 — join interest list</option>
           </select>
           {errors.childAge && (
             <p className="mt-1 text-sm text-red-500">{errors.childAge.message}</p>

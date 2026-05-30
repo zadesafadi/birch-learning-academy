@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
+import { siteConfig } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Accessibility Statement",
@@ -27,9 +28,8 @@ export default function AccessibilityPage() {
           </ul>
           <h2 className="font-serif text-2xl text-charcoal pt-4">Feedback</h2>
           <p>
-            If you encounter accessibility barriers on our website, please contact us at
-            hello@birchlearningacademy.com or (913) 555-0142. We take your feedback
-            seriously and will respond promptly.
+            If you encounter accessibility barriers on our website, please contact us at{" "}
+            {siteConfig.phone}. We take your feedback seriously and will respond promptly.
           </p>
         </div>
       </div>

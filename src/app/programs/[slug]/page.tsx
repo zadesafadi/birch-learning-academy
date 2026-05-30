@@ -12,12 +12,8 @@ import { CTASection } from "@/components/shared/cta-section";
 import { JsonLd, getBreadcrumbSchema } from "@/lib/seo";
 
 const programImages: Record<string, string> = {
-  infants: "https://images.unsplash.com/photo-1515488042361-ee00e8170dc8?w=1920&h=600&fit=crop",
-  toddlers: "https://images.unsplash.com/photo-1503454537845-b83146933a1b?w=1920&h=600&fit=crop",
-  "early-preschool": "https://images.unsplash.com/photo-1587654787591-70c8d94be832?w=1920&h=600&fit=crop",
   preschool: "https://images.unsplash.com/photo-1589391886646-a6395d0728bd?w=1920&h=600&fit=crop",
   "pre-k": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1920&h=600&fit=crop",
-  summer: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&h=600&fit=crop",
 };
 
 export function generateStaticParams() {
@@ -159,7 +155,7 @@ export default async function ProgramPage({
           <AnimateInView>
             <h2 className="font-serif text-3xl text-charcoal mb-4">Enrichment Included</h2>
             <p className="text-charcoal/70 max-w-2xl mx-auto mb-8">
-              Spanish, music & movement, yoga, art studio, and garden-to-table learning—all
+              Spanish, music & movement, yoga, art studio, and premium catered nutrition—all
               included in your tuition. No hidden fees.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

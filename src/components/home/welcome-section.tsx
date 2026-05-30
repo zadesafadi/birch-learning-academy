@@ -14,42 +14,45 @@ export function WelcomeSection() {
             Welcome to Birch
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-charcoal font-medium mb-6 leading-tight">
-            More Than Daycare — A Foundation for Life
+            The Foundation for Directing Greatness
           </h2>
           <div className="space-y-4 text-charcoal/70 leading-relaxed">
             <p>
-              At Birch Learning Academy, we believe childhood is not a season to
-              rush through—it&apos;s a foundation to nurture. Like the birch tree
-              that symbolizes our name, we cultivate resilience, flexibility, and
-              graceful growth in every child who walks through our doors.
+              At Birch Learning Academy, we believe early childhood is not a season to
+              rush through—it is a critical foundation to nurture. Modeled after our
+              namesake, we cultivate resilience, adaptability, and exceptional growth in
+              every child who walks through our doors.
             </p>
             <p>
-              Our play-based approach blends Montessori-inspired independence,
-              Reggio Emilia documentation, STEM exploration, and daily nature
-              immersion. We&apos;re not a franchise. We&apos;re your neighbors in
-              Johnson County—a boutique sanctuary where children are known, loved,
-              and inspired.
+              We are intentionally not a commercial franchise. Serving families across
+              the Overland Park, Olathe, and Leawood corridors, Birch Learning Academy
+              is a private-pay, boutique micro-academy engineered for families who refuse
+              to compromise on early education. Our curriculum is built on Brightwheel&apos;s
+              Experience Curriculum—a research-based, standards-aligned system—delivered with
+              instructor-led precision for children ages 2.5 to 5 years old.
             </p>
             <p>
-              From our garden-to-table kitchen to our biometric secure entry,
-              every detail is designed with your family in mind. Because you
-              deserve transparency, excellence, and a partner who shares your
-              values.
+              By capping our enrollment and maintaining an elite 1:7 to 1:8
+              teacher-to-child ratio, we offer a level of individualized engagement that
+              standard centers legally requiring only 1:12 simply cannot match. From our
+              organically catered daily menus to our secure, keyless-access
+              infrastructure, every operational detail is built around safety,
+              transparency, and elite developmental care.
             </p>
           </div>
           <Button href="/about" variant="ghost" className="mt-8 group">
-            Meet Our Founder
+            Meet Our Founders
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
         </AnimateInView>
 
         <AnimateInView delay={0.2}>
-          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative aspect-square max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
-              alt="Dr. Lauren Birch, Founder of Birch Learning Academy"
+              src="/images/founders.png"
+              alt="The founders of Birch Learning Academy"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

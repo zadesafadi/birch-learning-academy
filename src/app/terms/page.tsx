@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
+import { siteConfig } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -25,7 +26,7 @@ export default function TermsPage() {
           </p>
           <h2 className="font-serif text-2xl text-charcoal pt-4">Contact</h2>
           <p>
-            Questions? Reach us at hello@birchlearningacademy.com or (913) 555-0142.
+            Questions? Reach us at {siteConfig.phone}.
           </p>
         </div>
       </div>

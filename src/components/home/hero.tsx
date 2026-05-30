@@ -33,8 +33,8 @@ export function Hero() {
           Where Curiosity Blossoms
         </h1>
         <p className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up">
-          A boutique early learning experience for children 6 weeks to Pre-K in
-          the Leawood and Overland Park area
+          A boutique early learning experience for children ages 2.5 to 5 in
+          the Leawood, Overland Park, and Olathe area
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up">
           <Button href="/contact" size="lg">

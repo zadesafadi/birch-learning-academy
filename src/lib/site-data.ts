@@ -2,16 +2,16 @@ export const siteConfig = {
   name: "Birch Learning Academy",
   tagline: "Where Curiosity Blossoms",
   description:
-    "A boutique early learning experience for children 6 weeks to Pre-K in Johnson County, Kansas. Play-based, nature-inspired education in the Leawood and Overland Park area.",
+    "A boutique early learning experience for children ages 2.5 to 5 in Johnson County, Kansas. Play-based, nature-inspired education in the Leawood, Overland Park, and Olathe area.",
   url: "https://birchlearningacademy.com",
-  phone: "(913) 555-0142",
-  email: "hello@birchlearningacademy.com",
+  phone: "(785) 550-7291",
+  email: "TBA",
   address: {
-    street: "8420 Birch Tree Lane",
-    city: "Leawood",
+    street: "",
+    city: "Johnson County",
     state: "KS",
-    zip: "66206",
-    full: "8420 Birch Tree Lane, Leawood, KS 66206",
+    zip: "",
+    full: "Location TBA — Serving Leawood, Overland Park & Olathe",
   },
   hours: "Monday–Friday, 7:00 AM – 6:00 PM",
   social: {
@@ -33,122 +33,26 @@ export const trustBadges = [
 
 export const programs = [
   {
-    slug: "infants",
-    name: "Infants",
-    ageRange: "6 weeks – 12 months",
-    icon: "baby",
-    shortDescription:
-      "A warm, responsive environment where your baby's earliest discoveries are nurtured with love and intention.",
-    description:
-      "Our infant program provides a secure, sensory-rich environment where each baby follows their own rhythm. Degreed caregivers build deep bonds through responsive care, tummy time adventures, language-rich interactions, and gentle outdoor experiences.",
-    milestones: [
-      "Secure attachment and trust",
-      "Sensory exploration",
-      "Early language exposure",
-      "Gross motor development",
-      "Self-regulation foundations",
-    ],
-    schedule: [
-      { time: "7:00 AM", activity: "Warm greetings & individual care routines" },
-      { time: "8:30 AM", activity: "Sensory exploration & floor play" },
-      { time: "10:00 AM", activity: "Outdoor stroller walk or garden time" },
-      { time: "11:30 AM", activity: "Lunch & nap preparation" },
-      { time: "2:00 PM", activity: "Afternoon enrichment & music" },
-      { time: "4:00 PM", activity: "Quiet play & parent updates via app" },
-    ],
-    teacher: {
-      name: "Ms. Elena Rodriguez",
-      title: "Lead Infant Teacher",
-      credentials: "M.Ed. Early Childhood, 12 years experience",
-      bio: "Elena believes the first year of life is a masterpiece in progress. She creates calm, connected environments where every coo and crawl is celebrated.",
-    },
-    tuition: "$1,850/month",
-  },
-  {
-    slug: "toddlers",
-    name: "Toddlers",
-    ageRange: "12 – 24 months",
-    icon: "footprints",
-    shortDescription:
-      "Busy explorers build independence, language, and social skills through purposeful play and gentle guidance.",
-    description:
-      "Toddlers are natural scientists. Our program channels their boundless energy into meaningful learning through Montessori-inspired practical life activities, language immersion, outdoor exploration, and social-emotional coaching.",
-    milestones: [
-      "Language explosion",
-      "Independence & self-help skills",
-      "Social awareness",
-      "Fine & gross motor mastery",
-      "Emotional vocabulary",
-    ],
-    schedule: [
-      { time: "7:30 AM", activity: "Morning circle & free exploration" },
-      { time: "9:00 AM", activity: "Outdoor classroom & nature walk" },
-      { time: "10:30 AM", activity: "Spanish immersion & music" },
-      { time: "12:00 PM", activity: "Family-style lunch" },
-      { time: "1:30 PM", activity: "Rest time & quiet activities" },
-      { time: "3:30 PM", activity: "Art studio & yoga" },
-    ],
-    teacher: {
-      name: "Mr. James Whitfield",
-      title: "Lead Toddler Teacher",
-      credentials: "B.S. Child Development, AMS Montessori Associate",
-      bio: "James brings patience, humor, and deep respect for toddler autonomy. His classroom is a place where 'I do it myself!' is always celebrated.",
-    },
-    tuition: "$1,750/month",
-  },
-  {
-    slug: "early-preschool",
-    name: "Early Preschool",
-    ageRange: "2 – 3 years",
-    icon: "sprout",
-    shortDescription:
-      "Curious minds dive deeper into language, creativity, and collaboration in a Reggio-inspired setting.",
-    description:
-      "Early preschoolers are ready for more. Project-based learning emerges from their interests, documented through photos and portfolios. Daily Spanish, music, yoga, and garden time are all included.",
-    milestones: [
-      "Collaborative play",
-      "Pre-literacy skills",
-      "Problem-solving",
-      "Self-expression",
-      "Nature connection",
-    ],
-    schedule: [
-      { time: "8:00 AM", activity: "Project work & choice time" },
-      { time: "9:30 AM", activity: "Garden-to-table & outdoor learning" },
-      { time: "11:00 AM", activity: "Music & movement class" },
-      { time: "12:30 PM", activity: "Chef-prepared lunch" },
-      { time: "2:00 PM", activity: "Rest & quiet reading" },
-      { time: "3:30 PM", activity: "Art studio & mindfulness" },
-    ],
-    teacher: {
-      name: "Ms. Priya Sharma",
-      title: "Lead Early Preschool Teacher",
-      credentials: "M.A. Early Childhood Education, Reggio Emilia trained",
-      bio: "Priya sees every question as an invitation to explore. Her documentation walls tell the story of each child's unique learning journey.",
-    },
-    tuition: "$1,650/month",
-  },
-  {
     slug: "preschool",
     name: "Preschool",
-    ageRange: "3 – 4 years",
+    ageRange: "2.5 – 4 years",
     icon: "palette",
     shortDescription:
-      "STEM, literacy, and creative expression come together in a play-based curriculum that prepares confident learners.",
+      "Montessori-inspired independence meets instructor-led academic preparation in a boutique classroom for young learners.",
     description:
-      "Preschoolers engage in hands-on STEM challenges, emergent literacy, collaborative projects, and daily enrichment—all woven into a child-led framework that honors their natural curiosity.",
+      "Our Preschool program welcomes children from age 2.5, using Brightwheel's Experience Curriculum—a research-based, standards-aligned system—delivered with instructor-led precision in classrooms capped at elite 1:7 to 1:8 ratios.",
     milestones: [
+      "Independence & self-help skills",
       "Letter & number awareness",
-      "Scientific inquiry",
-      "Conflict resolution",
-      "Creative storytelling",
+      "Scientific inquiry & problem-solving",
+      "Social-emotional growth",
       "Kindergarten readiness foundations",
     ],
     schedule: [
       { time: "8:00 AM", activity: "Morning meeting & literacy centers" },
       { time: "9:30 AM", activity: "STEM lab & outdoor classroom" },
       { time: "11:00 AM", activity: "Spanish & cultural exploration" },
-      { time: "12:30 PM", activity: "Organic lunch & garden harvest" },
+      { time: "12:30 PM", activity: "Premium catered lunch & organic snack" },
       { time: "2:00 PM", activity: "Quiet time & individual reading" },
       { time: "3:30 PM", activity: "Art studio & gross motor play" },
     ],
@@ -168,7 +72,7 @@ export const programs = [
     shortDescription:
       "School-ready skills built through project-based learning, leadership opportunities, and joyful discovery.",
     description:
-      "Our Pre-K program ensures children enter kindergarten with confidence, curiosity, and a love of learning. Advanced literacy, math concepts, social leadership, and nature-based projects prepare them for their next chapter.",
+      "Our Pre-K program builds on Experience Curriculum's kindergarten-readiness progression—advanced literacy, math, social leadership, and nature-based projects—in classrooms small enough for every child to be truly known.",
     milestones: [
       "Reading readiness",
       "Mathematical thinking",
@@ -180,7 +84,7 @@ export const programs = [
       { time: "8:00 AM", activity: "Literacy workshop & journaling" },
       { time: "9:30 AM", activity: "Project-based learning & STEM" },
       { time: "11:00 AM", activity: "Community helpers & field exploration" },
-      { time: "12:30 PM", activity: "Farm-to-table lunch" },
+      { time: "12:30 PM", activity: "Premium catered lunch" },
       { time: "2:00 PM", activity: "Kindergarten prep & handwriting" },
       { time: "3:30 PM", activity: "Leadership roles & enrichment" },
     ],
@@ -191,38 +95,6 @@ export const programs = [
       bio: "Angela partners with local kindergarten teachers to ensure seamless transitions. Her graduates arrive at elementary school ready to lead.",
     },
     tuition: "$1,450/month",
-  },
-  {
-    slug: "summer",
-    name: "Summer Program",
-    ageRange: "2 – 5 years",
-    icon: "sun",
-    shortDescription:
-      "Adventure-filled summer camps with water play, nature exploration, and creative workshops.",
-    description:
-      "Our summer program keeps the learning alive with themed weeks, splash days, nature hikes, visiting artists, and garden harvests. Flexible weekly enrollment for enrolled and community families.",
-    milestones: [
-      "Outdoor adventure",
-      "Creative workshops",
-      "Friendship building",
-      "Nature immersion",
-      "Flexible enrollment",
-    ],
-    schedule: [
-      { time: "8:00 AM", activity: "Camp kickoff & team building" },
-      { time: "9:30 AM", activity: "Nature hike or water play" },
-      { time: "11:00 AM", activity: "Themed workshop (art, science, cooking)" },
-      { time: "12:30 PM", activity: "Picnic lunch outdoors" },
-      { time: "2:00 PM", activity: "Rest & quiet activities" },
-      { time: "3:30 PM", activity: "Camp games & celebration" },
-    ],
-    teacher: {
-      name: "Summer Camp Team",
-      title: "Rotating Lead Teachers",
-      credentials: "All degreed, CPR certified",
-      bio: "Our summer team brings fresh energy and specialized expertise each week, from local artists to naturalists.",
-    },
-    tuition: "$350/week",
   },
 ];
 
@@ -247,9 +119,9 @@ export const differentiators = [
   },
   {
     icon: "utensils",
-    title: "Farm-to-Table Meals",
+    title: "Premium Catered Nutrition",
     description:
-      "On-site chef preparing organic, locally-sourced meals and snacks daily.",
+      "Premium catered meals and organic snacks throughout the day—all included in tuition.",
   },
   {
     icon: "shield",
@@ -268,37 +140,37 @@ export const differentiators = [
 export const testimonials = [
   {
     quote:
-      "Birch Learning Academy feels like an extension of our home. The teachers know our daughter's quirks, celebrate her wins, and communicate with us throughout the day. We've never felt more confident in a childcare choice.",
+      "We toured Primrose and Goddard across Overland Park and Leawood. Birch was the only place that felt like a true boutique micro-academy—not a franchise assembly line. The 1:7 ratio means our daughter is actually known, not just supervised.",
     name: "Sarah & Michael Chen",
-    child: "Emma, age 3",
+    child: "Emma, Preschool (age 3)",
     rating: 5,
   },
   {
     quote:
-      "The transparent pricing alone sold us, but the nature program sealed the deal. Our son comes home muddy, happy, and telling us about the vegetables he helped grow. This place is magic.",
+      "Seeing tuition posted right on the website was refreshing. No surprise fees, no sales pitch to discover the real price. Everything from Spanish to organic meals is included—and our son started at 2.5 in Preschool loving every minute.",
     name: "Jessica Martinez",
-    child: "Lucas, age 4",
+    child: "Lucas, Preschool (age 4)",
     rating: 5,
   },
   {
     quote:
-      "We toured five centers in Johnson County. Birch was the only one that felt boutique without being pretentious. The enrichment included in tuition saved us hundreds compared to Primrose.",
+      "Zade and Deanna clearly built this for families who want more than a standard center. The Montessori-inspired approach paired with real instructor-led academics is exactly what we wanted for our Olathe commute. Capped enrollment makes a difference.",
     name: "David & Amanda Foster",
-    child: "Olivia, age 2",
+    child: "Olivia, Pre-K (age 4)",
     rating: 5,
   },
   {
     quote:
-      "As a pediatrician, I'm particular about childcare. Birch's health protocols, low ratios, and degreed staff exceed what I recommend to patient families.",
+      "As a nurse, I'm exacting about wellness protocols and sanitization. Deanna's clinical background shows in every detail—from daily health standards to how thoughtfully the space is laid out. I recommend Birch to colleagues without hesitation.",
     name: "Dr. Karen Walsh",
-    child: "Benjamin, age 1",
+    child: "Benjamin, Preschool (age 3)",
     rating: 5,
   },
   {
     quote:
-      "The Pre-K program prepared our daughter beautifully for Blue Valley kindergarten. She arrived confident, curious, and already reading simple books.",
+      "The Pre-K program prepared our daughter beautifully for Blue Valley kindergarten. She arrived confident, reading-ready, and socially prepared. The capped class size meant her teacher truly knew her strengths before she ever walked into elementary school.",
     name: "Rachel & Tom Nguyen",
-    child: "Sophia, alumni",
+    child: "Sophia, Pre-K alumni",
     rating: 5,
   },
 ];
@@ -357,27 +229,22 @@ export const enrichmentPrograms = [
       "Open-ended exploration with professional-grade materials in our dedicated art studio.",
   },
   {
-    name: "Garden-to-Table",
+    name: "Garden & Nutrition Education",
     frequency: "Daily",
     description:
-      "Children plant, tend, harvest, and cook with produce from our on-site garden.",
+      "Children explore where food comes from through hands-on garden activities, connecting nature-based learning to the premium organic meals served each day.",
   },
 ];
 
 export const tuitionTable = [
-  { program: "Infants (6 weeks – 12 months)", monthly: "$1,850", annual: "$20,350" },
-  { program: "Toddlers (12 – 24 months)", monthly: "$1,750", annual: "$19,250" },
-  { program: "Early Preschool (2 – 3 years)", monthly: "$1,650", annual: "$18,150" },
-  { program: "Preschool (3 – 4 years)", monthly: "$1,550", annual: "$17,050" },
+  { program: "Preschool (2.5 – 4 years)", monthly: "$1,550", annual: "$17,050" },
   { program: "Pre-K (4 – 5 years)", monthly: "$1,450", annual: "$15,950" },
-  { program: "Summer Program", monthly: "$350/week", annual: "Weekly enrollment" },
 ];
 
 export const includedInTuition = [
   "All enrichment programs (Spanish, music, yoga, art)",
-  "Organic breakfast, lunch, and PM snack",
+  "Premium catered breakfast, lunch, and organic snacks daily",
   "Brightwheel parent communication app",
-  "Diapers & wipes (Infant & Toddler programs)",
   "Sunscreen & basic supplies",
   "Field trips and special events",
 ];
@@ -414,7 +281,7 @@ export const faqs = [
   {
     question: "What are your student-teacher ratios?",
     answer:
-      "We maintain ratios below Kansas state requirements: Infants 1:3, Toddlers 1:4, Preschool 1:6, Pre-K 1:8. This ensures individualized attention for every child.",
+      "We maintain elite ratios of 1:7 to 1:8—well below Kansas state requirements of up to 1:12 for preschool-age children. This ensures individualized attention for every child.",
   },
   {
     question: "Is there a sibling discount?",
@@ -439,31 +306,24 @@ export const faqs = [
   {
     question: "What meals do you serve?",
     answer:
-      "Our on-site chef prepares organic, locally-sourced breakfast, lunch, and afternoon snack daily. We accommodate allergies, cultural preferences, and dietary restrictions.",
+      "Our premium catering partner delivers organic breakfast, lunch, and afternoon snacks daily—with organic snacks available throughout the day. All meals are included in tuition. We accommodate allergies, cultural preferences, and dietary restrictions.",
   },
 ];
 
 export const teamMembers = [
   {
-    name: "Dr. Lauren Birch",
-    role: "Founder & Director",
-    credentials: "Ed.D. Early Childhood Leadership, 20+ years",
-    bio: "Lauren founded Birch Learning Academy after a decade in public education convinced her that children deserve better—smaller classes, nature every day, and teachers who are truly valued. The birch tree, with its resilience and grace, became her symbol for what early childhood should be.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+    name: "Zade Safadi",
+    role: "Co-Founder",
+    credentials: "MBA, UMKC · Engineering background",
+    bio: "Zade structures Birch Learning Academy with exceptional reliability. His corporate focus on systems and strategy ensures institutional stability, protecting teacher-to-child interactions and long-term excellence.",
+    image: "/images/founders.png",
   },
   {
-    name: "Marcus Williams",
-    role: "Assistant Director",
-    credentials: "M.Ed. Educational Administration",
-    bio: "Marcus ensures every operational detail supports our educational mission. Parents know him as the friendly face at drop-off who remembers every child's name.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
-  },
-  {
-    name: "Chef Maria Santos",
-    role: "Executive Chef",
-    credentials: "Culinary Institute graduate, nutrition certified",
-    bio: "Maria transforms local ingredients into meals children actually eat—and love. Her garden-to-table philosophy means kids often eat what they grew that morning.",
-    image: "https://images.unsplash.com/photo-1595273670150-447a04d18696?w=400&h=500&fit=crop",
+    name: "Deanna Elkadri",
+    role: "Co-Founder",
+    credentials: "Advanced nursing degree (in progress)",
+    bio: "Deanna directs the academy's wellness layout and safety standards, leveraging active clinical training and pediatric health modules to establish strict wellness guidelines that far exceed standard center requirements.",
+    image: "/images/founders.png",
   },
 ];
 
@@ -489,10 +349,10 @@ export const blogPosts = [
     image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&h=500&fit=crop",
   },
   {
-    slug: "farm-to-table-nutrition-toddlers",
-    title: "Farm-to-Table Nutrition: Why It Matters for Toddlers",
+    slug: "premium-nutrition-preschoolers",
+    title: "Premium Nutrition: Why It Matters for Preschoolers",
     excerpt:
-      "How fresh, whole foods support brain development and healthy eating habits from the earliest ages.",
+      "How catered organic meals and healthy snacks support brain development and healthy eating habits from the earliest ages.",
     category: "Nutrition",
     date: "2026-03-18",
     readTime: "5 min read",
@@ -515,19 +375,19 @@ export const careers = [
     title: "Lead Preschool Teacher",
     type: "Full-time",
     description:
-      "Seeking a passionate, degreed educator to lead our Preschool classroom. Montessori or Reggio experience preferred.",
+      "Seeking a passionate, degreed educator to lead our Preschool classroom (ages 2.5–4). Montessori or Reggio experience preferred.",
   },
   {
-    title: "Assistant Toddler Teacher",
+    title: "Lead Pre-K Teacher",
     type: "Full-time",
     description:
-      "Join our toddler team supporting independence, language development, and joyful exploration.",
+      "Join our Pre-K team preparing children for kindergarten with project-based learning and school-readiness focus.",
   },
   {
     title: "Part-Time Substitute Teacher",
     type: "Part-time",
     description:
-      "Flexible substitute opportunities across all age groups. Early childhood coursework required.",
+      "Flexible substitute opportunities in our Preschool and Pre-K classrooms. Early childhood coursework required.",
   },
 ];
 
@@ -537,7 +397,7 @@ export const navLinks = {
     href: `/programs/${p.slug}`,
   })),
   about: [
-    { label: "Our Story", href: "/about" },
+    { label: "Our Story & Leadership", href: "/about" },
     { label: "Meet Our Team", href: "/team" },
     { label: "Our Facility", href: "/about#facility" },
   ],

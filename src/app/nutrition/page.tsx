@@ -8,25 +8,25 @@ import { AnimateInView } from "@/components/ui/animate-in-view";
 import { CTASection } from "@/components/shared/cta-section";
 
 export const metadata: Metadata = {
-  title: "Nutrition & Farm-to-Table",
+  title: "Nutrition & Premium Catering",
   description:
-    "Organic, locally-sourced meals prepared daily by our on-site chef. Garden-to-table nutrition at Birch Learning Academy.",
+    "Premium catered meals and organic snacks throughout the day at Birch Learning Academy in Johnson County, Kansas.",
 };
 
 const sampleMenu = {
-  breakfast: ["Organic oatmeal with berries", "Whole grain toast with avocado", "Fresh fruit"],
-  lunch: ["Grilled chicken with roasted vegetables", "Brown rice pilaf", "Garden salad with house dressing"],
-  snack: ["Apple slices with almond butter", "Homemade whole grain muffins", "Cheese and crackers"],
+  breakfast: ["Organic oatmeal with fresh berries", "Whole grain toast with avocado", "Seasonal fresh fruit"],
+  lunch: ["Grilled chicken with roasted vegetables", "Brown rice pilaf", "Mixed green salad"],
+  snacks: ["Apple slices with almond butter", "Organic whole grain muffins", "Veggie sticks with hummus"],
 };
 
 export default function NutritionPage() {
   return (
     <>
       <PageHero
-        title="Farm-to-Table Nutrition"
-        subtitle="Organic, locally-sourced meals prepared fresh daily by our on-site chef"
+        title="Premium Nutrition"
+        subtitle="Catered meals and organic snacks throughout the day—included in tuition"
         image="https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=1920&h=600&fit=crop"
-        imageAlt="Fresh organic meals at Birch Learning Academy"
+        imageAlt="Fresh organic meals served at Birch Learning Academy"
       />
 
       <Section background="cream">
@@ -34,10 +34,11 @@ export default function NutritionPage() {
           <AnimateInView>
             <h2 className="font-serif text-3xl text-charcoal mb-6">Our Food Philosophy</h2>
             <p className="text-charcoal/70 leading-relaxed text-lg">
-              We believe nutrition is education. Children who grow tomatoes in our garden
-              are more likely to eat them at lunch. Our on-site chef prepares every meal
-              from scratch using organic, locally-sourced ingredients — no processed foods,
-              no high-fructose corn syrup, no mystery ingredients.
+              We believe what children eat fuels how they learn. That&apos;s why Birch partners
+              with a premium catering service to deliver organic, thoughtfully prepared meals
+              and snacks throughout the day—breakfast, lunch, and afternoon snack included in
+              your tuition. No processed fillers, no mystery ingredients—just wholesome food
+              that supports focus, energy, and healthy habits.
             </p>
           </AnimateInView>
         </div>
@@ -46,32 +47,38 @@ export default function NutritionPage() {
       <Section background="birch">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <AnimateInView>
-            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto lg:max-w-none">
               <Image
-                src="https://images.unsplash.com/photo-1595273670150-447a04d18696?w=600&h=600&fit=crop"
-                alt="Chef Maria Santos"
+                src="https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=800&h=600&fit=crop"
+                alt="Premium catered organic meals for children"
                 fill
                 className="object-cover"
-                sizes="400px"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </AnimateInView>
           <AnimateInView delay={0.2}>
-            <p className="text-sage font-medium text-sm mb-2">Executive Chef</p>
-            <h2 className="font-serif text-3xl text-charcoal mb-4">Chef Maria Santos</h2>
+            <p className="text-sage font-medium text-sm mb-2">Included in Tuition</p>
+            <h2 className="font-serif text-3xl text-charcoal mb-4">Premium Catered Meals</h2>
+            <p className="text-charcoal/70 leading-relaxed mb-4">
+              Every day, our catering partner delivers fresh, premium meals to Birch Learning
+              Academy. Menus rotate seasonally and are designed with young children in
+              mind—balanced, nutritious, and appealing to developing palates.
+            </p>
             <p className="text-charcoal/70 leading-relaxed">
-              Culinary Institute graduate with a passion for child nutrition. Maria
-              designs seasonal menus that introduce children to diverse flavors while
-              accommodating allergies, cultural preferences, and dietary restrictions.
-              Her garden-to-table philosophy means kids often eat what they harvested
-              that morning.
+              Organic snacks are available throughout the day to keep energy steady between
+              meals. Families never pay extra for nutrition—it&apos;s part of the Birch
+              experience.
             </p>
           </AnimateInView>
         </div>
       </Section>
 
       <Section background="white">
-        <SectionHeading title="Sample Seasonal Menu" subtitle="Menus rotate weekly based on seasonal availability" />
+        <SectionHeading
+          title="Sample Daily Menu"
+          subtitle="Menus rotate weekly—always organic-focused and age-appropriate"
+        />
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {Object.entries(sampleMenu).map(([meal, items], index) => (
             <AnimateInView key={meal} delay={index * 0.1}>
@@ -95,21 +102,34 @@ export default function NutritionPage() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <AnimateInView>
             <Card>
-              <h3 className="font-serif text-xl text-charcoal mb-3">The Garden Program</h3>
-              <p className="text-charcoal/70 text-sm leading-relaxed">
-                Children plant, water, harvest, and cook with produce from our on-site
-                garden. Seasonal cycles teach patience, responsibility, and the connection
-                between earth and table.
-              </p>
+              <h3 className="font-serif text-xl text-charcoal mb-3">What's Included Daily</h3>
+              <ul className="space-y-2 text-charcoal/70 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sage shrink-0 mt-2" />
+                  Organic breakfast
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sage shrink-0 mt-2" />
+                  Premium catered lunch
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sage shrink-0 mt-2" />
+                  Organic afternoon snack
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sage shrink-0 mt-2" />
+                  Snacks available throughout the day
+                </li>
+              </ul>
             </Card>
           </AnimateInView>
           <AnimateInView delay={0.1}>
             <Card>
               <h3 className="font-serif text-xl text-charcoal mb-3">Dietary Accommodations</h3>
               <p className="text-charcoal/70 text-sm leading-relaxed">
-                We accommodate all allergies, vegetarian/vegan preferences, religious
-                dietary requirements, and cultural food traditions. Our kitchen is
-                nut-aware with dedicated preparation areas.
+                We accommodate allergies, vegetarian and vegan preferences, religious dietary
+                requirements, and cultural food traditions. Our catering partner works closely
+                with families to ensure every child&apos;s needs are met safely and consistently.
               </p>
             </Card>
           </AnimateInView>

@@ -34,7 +34,7 @@ export function VirtualTourTeaser() {
           </h2>
           <p className="text-charcoal/70 leading-relaxed mb-6">
             Explore our nature-inspired classrooms, outdoor learning spaces, art
-            studio, and farm-to-table kitchen from the comfort of your home. See
+            studio, and bright learning spaces from the comfort of your home. See
             why families across Overland Park and Leawood choose Birch.
           </p>
           <Button href="/contact" variant="secondary">

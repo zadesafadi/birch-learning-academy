@@ -8,13 +8,11 @@ export function getLocalBusinessSchema() {
     description: siteConfig.description,
     url: siteConfig.url,
     telephone: siteConfig.phone,
-    email: siteConfig.email,
+    ...(siteConfig.email !== "TBA" && { email: siteConfig.email }),
     address: {
       "@type": "PostalAddress",
-      streetAddress: siteConfig.address.street,
       addressLocality: siteConfig.address.city,
       addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
       addressCountry: "US",
     },
     geo: {

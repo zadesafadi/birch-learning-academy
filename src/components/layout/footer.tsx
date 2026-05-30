@@ -15,7 +15,7 @@ export function Footer() {
               <span className="font-serif text-lg">{siteConfig.name}</span>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Nurturing curious minds from 6 weeks to Pre-K with a modern,
+              Nurturing curious minds ages 2.5 to 5 with a modern,
               play-based approach in Johnson County, Kansas.
             </p>
             <div className="flex gap-4">
@@ -61,7 +61,7 @@ export function Footer() {
           <div>
             <h3 className="font-serif text-lg mb-4">Programs</h3>
             <ul className="space-y-2">
-              {programs.slice(0, 5).map((program) => (
+              {programs.map((program) => (
                 <li key={program.slug}>
                   <Link
                     href={`/programs/${program.slug}`}
@@ -89,9 +89,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-sage-light" />
-                <a href={`mailto:${siteConfig.email}`} className="hover:text-amber transition-colors">
-                  {siteConfig.email}
-                </a>
+                <span>{siteConfig.email}</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="h-4 w-4 mt-0.5 shrink-0 text-sage-light" />

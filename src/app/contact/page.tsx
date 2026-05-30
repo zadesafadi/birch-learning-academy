@@ -53,9 +53,7 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-sage shrink-0" />
-                    <a href={`mailto:${siteConfig.email}`} className="text-charcoal/70 hover:text-sage transition-colors">
-                      {siteConfig.email}
-                    </a>
+                    <span className="text-charcoal/70">{siteConfig.email}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-sage shrink-0 mt-0.5" />
@@ -66,17 +64,13 @@ export default function ContactPage() {
             </AnimateInView>
 
             <AnimateInView delay={0.2}>
-              <div className="rounded-2xl overflow-hidden shadow-sm border border-birch aspect-[4/3] bg-birch">
-                <iframe
-                  title="Birch Learning Academy location map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.5!2d-94.6169!3d38.9667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU4JzAwLjEiTiA5NMKwMzcnMDAuOCJX!5e0!3m2!1sen!2sus!4v1"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              <div className="rounded-2xl p-8 shadow-sm border border-birch aspect-[4/3] bg-birch flex flex-col items-center justify-center text-center">
+                <MapPin className="h-10 w-10 text-sage mb-4" />
+                <p className="font-serif text-xl text-charcoal mb-2">Campus Location</p>
+                <p className="text-charcoal/70 text-sm leading-relaxed max-w-xs">
+                  Our Leawood / Overland Park area campus address will be announced soon.
+                  Call us to schedule a tour in the meantime.
+                </p>
               </div>
             </AnimateInView>
           </div>

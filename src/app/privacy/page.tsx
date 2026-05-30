@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
+import { siteConfig } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -32,7 +33,7 @@ export default function PrivacyPage() {
           </p>
           <h2 className="font-serif text-2xl text-charcoal pt-4">Contact</h2>
           <p>
-            Questions about this policy? Contact us at hello@birchlearningacademy.com.
+            Questions about this policy? Contact us at {siteConfig.phone}.
           </p>
         </div>
       </div>

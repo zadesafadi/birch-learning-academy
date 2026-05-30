@@ -9,9 +9,9 @@ import { AnimateInView } from "@/components/ui/animate-in-view";
 import { CTASection } from "@/components/shared/cta-section";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Our Story & Leadership",
   description:
-    "Discover the story behind Birch Learning Academy — a boutique, nature-inspired early learning center in Johnson County, Kansas.",
+    "Meet Zade Safadi and Deanna Elkadri, the founders of Birch Learning Academy — a boutique early learning center in Johnson County, Kansas.",
 };
 
 const facilityImages = [
@@ -19,7 +19,7 @@ const facilityImages = [
   { src: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&h=400&fit=crop", alt: "Outdoor classroom and garden" },
   { src: "https://images.unsplash.com/photo-1587654787591-70c8d94be832?w=600&h=400&fit=crop", alt: "Children in art studio" },
   { src: "https://images.unsplash.com/photo-1503454537845-b83146933a1b?w=600&h=400&fit=crop", alt: "Indoor gross motor space" },
-  { src: "https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=600&h=400&fit=crop", alt: "Farm-to-table kitchen" },
+  { src: "https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=600&h=400&fit=crop", alt: "Premium catered meal service" },
   { src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop", alt: "Secure entry lobby" },
 ];
 
@@ -27,34 +27,88 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="Our Story"
-        subtitle="Where the birch tree meets the classroom — a new kind of early learning in Johnson County"
+        title="Our Story & Leadership"
+        subtitle="A husband-and-wife partnership dedicated to redefining early childhood education in Johnson County"
       />
 
-      <Section background="cream">
-        <div className="max-w-3xl mx-auto">
+      <Section background="cream" id="leadership">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
           <AnimateInView>
-            <h2 className="font-serif text-3xl text-charcoal mb-6">Why Birch?</h2>
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto lg:max-w-none sticky top-36">
+              <Image
+                src="/images/founders.png"
+                alt="Zade Safadi and Deanna Elkadri, founders of Birch Learning Academy"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </AnimateInView>
+
+          <AnimateInView delay={0.1}>
+            <p className="text-sage font-medium tracking-widest uppercase text-sm mb-3">
+              Our Founders
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl text-charcoal font-medium mb-6 leading-tight">
+              Zade Safadi &amp; Deanna Elkadri
+            </h2>
             <div className="space-y-4 text-charcoal/70 leading-relaxed">
               <p>
-                Dr. Lauren Birch spent fifteen years in public education before a simple
-                realization changed everything: children deserve better than what most
-                childcare centers offer. Smaller classes. Nature every day. Teachers who
-                are truly valued. Transparency about what families pay and why.
+                At the heart of Birch Learning Academy is a husband-and-wife partnership
+                dedicated to redefining early childhood education. When founders Zade Safadi
+                and Deanna Elkadri envisioned the academy, they wanted to step away from
+                the cold, assembly-line feel of national childcare franchises. They believed
+                families in Johnson County deserved an intimate alternative—a boutique space
+                engineered for families who refuse to compromise on the safety, environment,
+                and academic preparation of their children.
               </p>
               <p>
-                The birch tree became her symbol — resilient yet graceful, bending without
-                breaking, always reaching toward light. Like the birch, children thrive when
-                given room to grow at their own pace, rooted in security but free to explore.
-              </p>
-              <p>
-                Birch Learning Academy opened its doors in the Leawood/Overland Park area to
-                serve families who refuse to compromise — who want boutique quality without
-                corporate coldness, and who believe the earliest years shape a lifetime.
+                Their marriage brings a rare harmony of modern clinical insights and
+                operational precision to the academy:
               </p>
             </div>
           </AnimateInView>
         </div>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-12">
+          <AnimateInView delay={0.15}>
+            <Card className="h-full">
+              <p className="text-sage text-sm font-medium mb-2">Deanna Elkadri</p>
+              <h3 className="font-serif text-xl text-charcoal mb-3">
+                A Healthy, Protective Foundation
+              </h3>
+              <p className="text-charcoal/70 text-sm leading-relaxed">
+                Deanna directs the academy&apos;s wellness layout and safety standards.
+                Currently completing her advanced degree in nursing, she leverages her
+                active clinical training and pediatric health modules to establish strict,
+                top-tier wellness guidelines and sanitization workflows that far exceed
+                standard center requirements.
+              </p>
+            </Card>
+          </AnimateInView>
+          <AnimateInView delay={0.2}>
+            <Card className="h-full">
+              <p className="text-sage text-sm font-medium mb-2">Zade Safadi</p>
+              <h3 className="font-serif text-xl text-charcoal mb-3">
+                An Elite Infrastructure
+              </h3>
+              <p className="text-charcoal/70 text-sm leading-relaxed">
+                With an MBA from UMKC and an engineering background, Zade structures the
+                business with exceptional reliability. His corporate focus on systems and
+                strategy means the academy operates with institutional stability, protecting
+                teacher-to-child interactions and ensuring long-term excellence.
+              </p>
+            </Card>
+          </AnimateInView>
+        </div>
+
+        <AnimateInView delay={0.25}>
+          <p className="text-charcoal/70 leading-relaxed text-center max-w-3xl mx-auto mt-12 text-lg font-serif italic">
+            Birch Learning Academy is our personal commitment to your family. We invite you
+            to experience a micro-academy built on love, structure, and an unyielding
+            standard of quality.
+          </p>
+        </AnimateInView>
       </Section>
 
       <Section background="birch">
@@ -77,10 +131,10 @@ export default function AboutPage() {
             <h2 className="font-serif text-3xl text-charcoal mb-6 text-center">Our Philosophy</h2>
             <div className="space-y-4 text-charcoal/70 leading-relaxed">
               <p>
-                We blend the best of proven approaches: Montessori-inspired self-direction,
-                Reggio Emilia documentation and environment design, daily STEM exploration,
-                nature-based learning, and social-emotional development as the foundation
-                for everything else.
+                We blend the best of proven approaches: Brightwheel&apos;s Experience
+                Curriculum as our structured foundation, instructor-led academic preparation,
+                daily STEM exploration, nature-based learning, and social-emotional
+                development as the foundation for everything else.
               </p>
               <p>
                 Our teachers don&apos;t follow a rigid script. They observe, document, and
@@ -102,36 +156,6 @@ export default function AboutPage() {
               </div>
             </AnimateInView>
           ))}
-        </div>
-      </Section>
-
-      <Section background="birch">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <AnimateInView>
-            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto">
-              <Image
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop"
-                alt="Dr. Lauren Birch, Founder"
-                fill
-                className="object-cover"
-                sizes="400px"
-              />
-            </div>
-          </AnimateInView>
-          <AnimateInView delay={0.2}>
-            <p className="text-sage font-medium text-sm mb-2">Founder & Director</p>
-            <h2 className="font-serif text-3xl text-charcoal mb-4">Dr. Lauren Birch</h2>
-            <blockquote className="font-serif text-xl text-charcoal/80 italic mb-4 border-l-4 border-sage pl-4">
-              &ldquo;Every child who walks through our doors deserves to be known, loved, and
-              inspired. That&apos;s not a tagline — it&apos;s a promise.&rdquo;
-            </blockquote>
-            <p className="text-charcoal/70 leading-relaxed">
-              Ed.D. in Early Childhood Leadership with 20+ years of experience. Lauren
-              founded Birch to create the center she wished existed when her own children
-              were young — and the one she&apos;d recommend to every patient family as a
-              pediatrician would.
-            </p>
-          </AnimateInView>
         </div>
       </Section>
 
