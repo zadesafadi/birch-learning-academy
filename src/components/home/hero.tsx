@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { siteImages } from "@/lib/site-data";
+import { HeroAnimatedBackground } from "@/components/home/hero-animated-background";
 
 export function Hero() {
   return (
@@ -8,23 +7,7 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden box-border bg-sage-dark"
       style={{ paddingTop: "var(--site-top-offset)" }}
     >
-      {/* Gradient fallback — always visible if image fails */}
-      <div
-        className="absolute inset-0 bg-gradient-to-br from-sage-dark via-sage to-charcoal/80"
-        aria-hidden="true"
-      />
-
-      <div className="absolute inset-0">
-        <Image
-          src={siteImages.hero}
-          alt="Children exploring nature in the outdoor classroom at Birch Learning Academy"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/40 to-charcoal/70" />
-      </div>
+      <HeroAnimatedBackground />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pb-32">
         <p className="inline-block mb-4 px-4 py-1.5 rounded-full bg-black/35 backdrop-blur-sm border border-white/30 text-white font-semibold tracking-[0.18em] uppercase text-sm shadow-lg animate-fade-in-up">
@@ -47,7 +30,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-24 lg:bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
+      <div className="absolute bottom-24 lg:bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block z-10">
         <div className="w-6 h-10 rounded-full border-2 border-white/50 flex items-start justify-center p-2">
           <div className="w-1 h-2 bg-white/70 rounded-full" />
         </div>

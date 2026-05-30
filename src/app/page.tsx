@@ -17,7 +17,7 @@ export default function HomePage() {
       <DifferentiatorsGrid />
       <TestimonialsCarousel />
       <VirtualTourTeaser />
-      <CTASection />
+      <CTASection animatedBackground />
     </>
   );
 }

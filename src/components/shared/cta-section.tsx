@@ -1,21 +1,33 @@
-import Image from "next/image";
 import { Phone } from "lucide-react";
 import { siteConfig, siteImages } from "@/lib/site-data";
 import { Button } from "@/components/ui/button";
 import { AnimateInView } from "@/components/ui/animate-in-view";
+import { HeroAnimatedBackground } from "@/components/home/hero-animated-background";
+import Image from "next/image";
 
-export function CTASection() {
+interface CTASectionProps {
+  /** Use illustrated animation instead of a photo — ideal until real facility photos are ready */
+  animatedBackground?: boolean;
+}
+
+export function CTASection({ animatedBackground = false }: CTASectionProps) {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden bg-sage">
       <div className="absolute inset-0">
-        <Image
-          src={siteImages.outdoor}
-          alt="Children learning outdoors at Birch Learning Academy"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-sage/85" />
+        {animatedBackground ? (
+          <HeroAnimatedBackground subtle />
+        ) : (
+          <>
+            <Image
+              src={siteImages.outdoor}
+              alt="Outdoor learning at Birch Learning Academy"
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-sage/85" />
+          </>
+        )}
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto text-center px-4">

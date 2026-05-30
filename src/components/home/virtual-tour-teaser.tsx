@@ -1,29 +1,14 @@
-import Image from "next/image";
-import { Play } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { AnimateInView } from "@/components/ui/animate-in-view";
 import { Button } from "@/components/ui/button";
-import { siteImages } from "@/lib/site-data";
+import { PlayroomAnimatedPreview } from "@/components/home/playroom-animated-preview";
 
 export function VirtualTourTeaser() {
   return (
     <Section background="white">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <AnimateInView>
-          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
-            <Image
-              src={siteImages.classroom}
-              alt="Bright, natural-light classroom at Birch Learning Academy"
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-            <div className="absolute inset-0 bg-charcoal/30 flex items-center justify-center group-hover:bg-charcoal/40 transition-colors">
-              <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <Play className="h-7 w-7 text-sage ml-1" fill="currentColor" />
-              </div>
-            </div>
-          </div>
+          <PlayroomAnimatedPreview />
         </AnimateInView>
 
         <AnimateInView delay={0.2}>
