@@ -35,7 +35,7 @@ export default function ProgramsPage() {
       </Section>
 
       <Section background="birch">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {programs.map((program, index) => (
             <AnimateInView key={program.slug} delay={index * 0.1}>
               <Card hover className="h-full">

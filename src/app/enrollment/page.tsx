@@ -66,6 +66,7 @@ export default function EnrollmentPage() {
                 <tr className="border-b border-birch bg-cream">
                   <th className="px-6 py-4 font-serif text-charcoal">Program</th>
                   <th className="px-6 py-4 font-serif text-charcoal">Monthly</th>
+                  <th className="px-6 py-4 font-serif text-charcoal">Weekly</th>
                   <th className="px-6 py-4 font-serif text-charcoal">Annual</th>
                 </tr>
               </thead>
@@ -74,6 +75,7 @@ export default function EnrollmentPage() {
                   <tr key={row.program} className="border-b border-birch last:border-0">
                     <td className="px-6 py-4 text-charcoal/80 text-sm">{row.program}</td>
                     <td className="px-6 py-4 text-amber font-semibold">{row.monthly}</td>
+                    <td className="px-6 py-4 text-charcoal/80 text-sm">{row.weekly}</td>
                     <td className="px-6 py-4 text-charcoal/60 text-sm">{row.annual}</td>
                   </tr>
                 ))}

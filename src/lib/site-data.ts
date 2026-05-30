@@ -62,7 +62,7 @@ export const programs = [
       credentials: "B.A. Elementary Education, STEM certified",
       bio: "Rachel transforms everyday moments into 'aha!' discoveries. Her classroom buzzes with the energy of young inventors and storytellers.",
     },
-    tuition: "$1,550/month",
+    tuition: "$1,360/month ($340/week)",
   },
   {
     slug: "pre-k",
@@ -94,7 +94,7 @@ export const programs = [
       credentials: "M.Ed. Curriculum & Instruction, 15 years experience",
       bio: "Angela partners with local kindergarten teachers to ensure seamless transitions. Her graduates arrive at elementary school ready to lead.",
     },
-    tuition: "$1,450/month",
+    tuition: "$1,360/month ($340/week)",
   },
 ];
 
@@ -237,8 +237,8 @@ export const enrichmentPrograms = [
 ];
 
 export const tuitionTable = [
-  { program: "Preschool (2.5 – 4 years)", monthly: "$1,550", annual: "$17,050" },
-  { program: "Pre-K (4 – 5 years)", monthly: "$1,450", annual: "$15,950" },
+  { program: "Preschool (2.5 – 4 years)", monthly: "$1,360", weekly: "$340", annual: "$16,320" },
+  { program: "Pre-K (4 – 5 years)", monthly: "$1,360", weekly: "$340", annual: "$16,320" },
 ];
 
 export const includedInTuition = [

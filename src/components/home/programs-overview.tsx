@@ -22,7 +22,7 @@ export function ProgramsOverview() {
         title="Preschool & Pre-K Programs"
         subtitle="Boutique early education for children ages 2.5 to 5 in Johnson County"
       />
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
         {programs.map((program, index) => {
           const Icon = iconMap[program.icon] || Sprout;
           return (
