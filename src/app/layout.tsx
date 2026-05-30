@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import { AnnouncementBar } from "@/components/layout/announcement-bar";
-import { Header } from "@/components/layout/header";
+import { SiteHeader } from "@/components/layout/site-header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingCTA } from "@/components/layout/floating-cta";
 import { BackToTop } from "@/components/layout/back-to-top";
@@ -60,8 +59,7 @@ export default function RootLayout({
         <JsonLd data={[getLocalBusinessSchema(), getOrganizationSchema()]} />
       </head>
       <body className="min-h-full flex flex-col font-sans text-charcoal antialiased pb-16 lg:pb-0">
-        <AnnouncementBar />
-        <Header />
+        <SiteHeader />
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingCTA />

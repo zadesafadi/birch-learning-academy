@@ -30,7 +30,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "transition-all duration-300",
         scrolled
           ? "bg-cream/95 backdrop-blur-md shadow-sm py-3"
           : "bg-charcoal/20 backdrop-blur-sm py-5"
@@ -154,7 +154,10 @@ export function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-0 bg-cream z-40 pt-20 overflow-y-auto">
+        <div
+          className="lg:hidden fixed inset-0 bg-cream z-40 overflow-y-auto"
+          style={{ paddingTop: "var(--site-top-offset)" }}
+        >
           <nav className="px-6 py-4 space-y-1" aria-label="Mobile navigation">
             <p className="px-4 py-2 text-xs font-semibold text-sage uppercase tracking-wider">
               Programs

@@ -9,7 +9,10 @@ const heroImages = [
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden box-border"
+      style={{ paddingTop: "var(--site-top-offset)" }}
+    >
       <div className="absolute inset-0">
         <Image
           src={heroImages[0]}
@@ -22,8 +25,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/40 to-charcoal/70" />
       </div>
 
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-24 pb-32">
-        <p className="text-amber font-medium tracking-widest uppercase text-sm mb-4 animate-fade-in-up">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pb-32">
+        <p className="inline-block mb-4 px-4 py-1.5 rounded-full bg-black/35 backdrop-blur-sm border border-white/30 text-white font-semibold tracking-[0.18em] uppercase text-sm shadow-lg animate-fade-in-up">
           Johnson County, Kansas
         </p>
         <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white font-medium leading-tight mb-6 animate-fade-in-up">

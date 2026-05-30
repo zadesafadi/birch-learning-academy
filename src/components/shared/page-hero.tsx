@@ -14,7 +14,10 @@ export function PageHero({
   imageAlt = "Birch Learning Academy",
 }: PageHeroProps) {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <section
+      className="relative pb-20 md:pb-28 overflow-hidden"
+      style={{ paddingTop: "calc(var(--site-top-offset) + 2rem)" }}
+    >
       <div className="absolute inset-0">
         <Image
           src={image}
