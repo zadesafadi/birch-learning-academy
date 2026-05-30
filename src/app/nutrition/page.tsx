@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 };
 
 const sampleMenu = {
-  breakfast: ["Organic oatmeal with fresh berries", "Whole grain toast with avocado", "Seasonal fresh fruit"],
   lunch: ["Grilled chicken with roasted vegetables", "Brown rice pilaf", "Mixed green salad"],
   snacks: ["Apple slices with almond butter", "Organic whole grain muffins", "Veggie sticks with hummus"],
 };
@@ -25,7 +24,7 @@ export default function NutritionPage() {
     <>
       <PageHero
         title="Premium Nutrition"
-        subtitle="Catered meals and organic snacks throughout the day—included in tuition"
+        subtitle="Catered lunch and organic snacks throughout the day—included in tuition"
         image={siteImages.nutrition}
         imageAlt="Fresh organic meals served at Birch Learning Academy"
       />
@@ -37,7 +36,7 @@ export default function NutritionPage() {
             <p className="text-charcoal/70 leading-relaxed text-lg">
               We believe what children eat fuels how they learn. That&apos;s why Birch partners
               with a premium catering service to deliver organic, thoughtfully prepared meals
-              and snacks throughout the day—breakfast, lunch, and afternoon snack included in
+              and snacks throughout the day—lunch and afternoon snack included in
               your tuition. No processed fillers, no mystery ingredients—just wholesome food
               that supports focus, energy, and healthy habits.
             </p>
@@ -80,7 +79,7 @@ export default function NutritionPage() {
           title="Sample Daily Menu"
           subtitle="Menus rotate weekly—always organic-focused and age-appropriate"
         />
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {Object.entries(sampleMenu).map(([meal, items], index) => (
             <AnimateInView key={meal} delay={index * 0.1}>
               <Card>
@@ -105,10 +104,6 @@ export default function NutritionPage() {
             <Card>
               <h3 className="font-serif text-xl text-charcoal mb-3">What's Included Daily</h3>
               <ul className="space-y-2 text-charcoal/70 text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sage shrink-0 mt-2" />
-                  Organic breakfast
-                </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-sage shrink-0 mt-2" />
                   Premium catered lunch

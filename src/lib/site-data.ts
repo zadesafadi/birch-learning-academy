@@ -250,7 +250,7 @@ export const tuitionTable = [
 
 export const includedInTuition = [
   "All enrichment programs (music, yoga, art)",
-  "Premium catered breakfast, lunch, and organic snacks daily",
+  "Premium catered lunch and organic snacks daily",
   "Brightwheel parent communication app",
   "Sunscreen & basic supplies",
   "Field trips and special events",
@@ -313,7 +313,7 @@ export const faqs = [
   {
     question: "What meals do you serve?",
     answer:
-      "Our premium catering partner delivers organic breakfast, lunch, and afternoon snacks daily—with organic snacks available throughout the day. All meals are included in tuition. We accommodate allergies, cultural preferences, and dietary restrictions.",
+      "Our premium catering partner delivers organic lunch and afternoon snacks daily—with organic snacks available throughout the day. Meals and snacks are included in tuition. We accommodate allergies, cultural preferences, and dietary restrictions.",
   },
 ];
 
