@@ -33,25 +33,14 @@ export default function AboutPage() {
       <Section background="cream" id="leadership">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
           <AnimateInView>
-            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none sticky top-36">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src={siteImages.zade}
-                  alt="Zade Safadi, Co-Founder of Birch Learning Academy"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 45vw, 25vw"
-                />
-              </div>
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src={siteImages.deanna}
-                  alt="Deanna Elkadri, Co-Founder of Birch Learning Academy"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 45vw, 25vw"
-                />
-              </div>
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto lg:max-w-none sticky top-36">
+              <Image
+                src={siteImages.founders}
+                alt="Zade Safadi and Deanna Elkadri, founders of Birch Learning Academy"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </AnimateInView>
 

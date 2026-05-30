@@ -48,25 +48,14 @@ export function WelcomeSection() {
         </AnimateInView>
 
         <AnimateInView delay={0.2}>
-          <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src={siteImages.zade}
-                alt="Zade Safadi, Co-Founder of Birch Learning Academy"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 45vw, 25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src={siteImages.deanna}
-                alt="Deanna Elkadri, Co-Founder of Birch Learning Academy"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 45vw, 25vw"
-              />
-            </div>
+          <div className="relative aspect-square max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src={siteImages.founders}
+              alt="Zade Safadi and Deanna Elkadri, founders of Birch Learning Academy"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
         </AnimateInView>
       </div>
