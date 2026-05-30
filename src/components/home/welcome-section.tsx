@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { siteImages } from "@/lib/site-data";
 import { Section } from "@/components/ui/section";
 import { AnimateInView } from "@/components/ui/animate-in-view";
 import { Button } from "@/components/ui/button";
@@ -25,7 +26,7 @@ export function WelcomeSection() {
             </p>
             <p>
               We are intentionally not a commercial franchise. Serving families across
-              the Overland Park, Olathe, and Leawood corridors, Birch Learning Academy
+              Serving families across the Johnson County area, Birch Learning Academy
               is a private-pay, boutique micro-academy engineered for families who refuse
               to compromise on early education. Our curriculum is built on Brightwheel&apos;s
               Experience Curriculum—a research-based, standards-aligned system—delivered with
@@ -47,14 +48,25 @@ export function WelcomeSection() {
         </AnimateInView>
 
         <AnimateInView delay={0.2}>
-          <div className="relative aspect-square max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/founders.png"
-              alt="The founders of Birch Learning Academy"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={siteImages.zade}
+                alt="Zade Safadi, Co-Founder of Birch Learning Academy"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 45vw, 25vw"
+              />
+            </div>
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={siteImages.deanna}
+                alt="Deanna Elkadri, Co-Founder of Birch Learning Academy"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 45vw, 25vw"
+              />
+            </div>
           </div>
         </AnimateInView>
       </div>

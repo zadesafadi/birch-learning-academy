@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { teamMembers } from "@/lib/site-data";
+import { teamMembers, siteImages } from "@/lib/site-data";
 import { PageHero } from "@/components/shared/page-hero";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -20,23 +20,23 @@ export default function TeamPage() {
       <PageHero
         title="Meet Our Team"
         subtitle="Passionate educators who choose Birch — and stay"
-        image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1920&h=600&fit=crop"
+        image={siteImages.outdoor}
         imageAlt="Birch Learning Academy teaching team"
       />
 
       <Section background="cream">
         <SectionHeading title="Leadership Team" />
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {teamMembers.map((member, index) => (
             <AnimateInView key={member.name} delay={index * 0.1}>
               <Card className="text-center h-full">
-                <div className="relative w-32 h-32 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-birch">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
-                    sizes="128px"
+                    className="object-cover object-top"
+                    sizes="160px"
                   />
                 </div>
                 <h3 className="font-serif text-xl text-charcoal">{member.name}</h3>

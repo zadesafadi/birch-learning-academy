@@ -1,8 +1,21 @@
+export const siteImages = {
+  hero: "/images/hero.jpg",
+  classroom: "/images/classroom.jpg",
+  outdoor: "/images/outdoor.jpg",
+  childrenLearning: "/images/children-learning.jpg",
+  nutrition: "/images/nutrition.jpg",
+  programs: "/images/programs.jpg",
+  art: "/images/art.jpg",
+  founders: "/images/founders.png",
+  zade: "/images/zade.png",
+  deanna: "/images/deanna.png",
+} as const;
+
 export const siteConfig = {
   name: "Birch Learning Academy",
   tagline: "Where Curiosity Blossoms",
   description:
-    "A boutique early learning experience for children ages 2.5 to 5 in Johnson County, Kansas. Play-based, nature-inspired education in the Leawood, Overland Park, and Olathe area.",
+    "A boutique early learning experience for children ages 2.5 to 5 in Johnson County, Kansas. Play-based, nature-inspired education serving families across the Johnson County area.",
   url: "https://birchlearningacademy.com",
   phone: "(785) 550-7291",
   email: "TBA",
@@ -11,7 +24,7 @@ export const siteConfig = {
     city: "Johnson County",
     state: "KS",
     zip: "",
-    full: "Location TBA — Serving Leawood, Overland Park & Olathe",
+    full: "Location TBA — Serving the Johnson County area",
   },
   hours: "Monday–Friday, 7:00 AM – 6:00 PM",
   social: {
@@ -51,7 +64,7 @@ export const programs = [
     schedule: [
       { time: "8:00 AM", activity: "Morning meeting & literacy centers" },
       { time: "9:30 AM", activity: "STEM lab & outdoor classroom" },
-      { time: "11:00 AM", activity: "Spanish & cultural exploration" },
+      { time: "11:00 AM", activity: "Language & literacy exploration" },
       { time: "12:30 PM", activity: "Premium catered lunch & organic snack" },
       { time: "2:00 PM", activity: "Quiet time & individual reading" },
       { time: "3:30 PM", activity: "Art studio & gross motor play" },
@@ -109,7 +122,7 @@ export const differentiators = [
     icon: "palette",
     title: "Enrichment Included",
     description:
-      "Spanish, music & movement, yoga, and art studio—all included in tuition.",
+      "Music & movement, yoga, and art studio—all included in tuition.",
   },
   {
     icon: "users",
@@ -140,21 +153,21 @@ export const differentiators = [
 export const testimonials = [
   {
     quote:
-      "We toured Primrose and Goddard across Overland Park and Leawood. Birch was the only place that felt like a true boutique micro-academy—not a franchise assembly line. The 1:7 ratio means our daughter is actually known, not just supervised.",
+      "We toured Primrose and Goddard across Johnson County. Birch was the only place that felt like a true boutique micro-academy—not a franchise assembly line. The 1:7 ratio means our daughter is actually known, not just supervised.",
     name: "Sarah & Michael Chen",
     child: "Emma, Preschool (age 3)",
     rating: 5,
   },
   {
     quote:
-      "Seeing tuition posted right on the website was refreshing. No surprise fees, no sales pitch to discover the real price. Everything from Spanish to organic meals is included—and our son started at 2.5 in Preschool loving every minute.",
+      "Seeing tuition posted right on the website was refreshing. No surprise fees, no sales pitch to discover the real price. Everything from enrichment to organic meals is included—and our son started at 2.5 in Preschool loving every minute.",
     name: "Jessica Martinez",
     child: "Lucas, Preschool (age 4)",
     rating: 5,
   },
   {
     quote:
-      "Zade and Deanna clearly built this for families who want more than a standard center. The Montessori-inspired approach paired with real instructor-led academics is exactly what we wanted for our Olathe commute. Capped enrollment makes a difference.",
+      "Zade and Deanna clearly built this for families who want more than a standard center. The Experience Curriculum paired with instructor-led academics is exactly what we wanted. Capped enrollment makes a difference.",
     name: "David & Amanda Foster",
     child: "Olivia, Pre-K (age 4)",
     rating: 5,
@@ -205,12 +218,6 @@ export const values = [
 
 export const enrichmentPrograms = [
   {
-    name: "Spanish Language Immersion",
-    frequency: "Daily",
-    description:
-      "Native-speaking educators weave Spanish naturally throughout the day through songs, stories, and conversation.",
-  },
-  {
     name: "Music & Movement",
     frequency: "3× weekly",
     description:
@@ -242,7 +249,7 @@ export const tuitionTable = [
 ];
 
 export const includedInTuition = [
-  "All enrichment programs (Spanish, music, yoga, art)",
+  "All enrichment programs (music, yoga, art)",
   "Premium catered breakfast, lunch, and organic snacks daily",
   "Brightwheel parent communication app",
   "Sunscreen & basic supplies",
@@ -316,14 +323,14 @@ export const teamMembers = [
     role: "Co-Founder",
     credentials: "MBA, UMKC · Engineering background",
     bio: "Zade structures Birch Learning Academy with exceptional reliability. His corporate focus on systems and strategy ensures institutional stability, protecting teacher-to-child interactions and long-term excellence.",
-    image: "/images/founders.png",
+    image: siteImages.zade,
   },
   {
     name: "Deanna Elkadri",
     role: "Co-Founder",
     credentials: "Advanced nursing degree (in progress)",
     bio: "Deanna directs the academy's wellness layout and safety standards, leveraging active clinical training and pediatric health modules to establish strict wellness guidelines that far exceed standard center requirements.",
-    image: "/images/founders.png",
+    image: siteImages.deanna,
   },
 ];
 
@@ -332,11 +339,11 @@ export const blogPosts = [
     slug: "choosing-childcare-johnson-county",
     title: "How to Choose the Right Childcare in Johnson County",
     excerpt:
-      "A parent's guide to evaluating daycare and preschool options in Overland Park, Leawood, and beyond.",
+      "A parent's guide to evaluating daycare and preschool options across Johnson County.",
     category: "Parenting Resources",
     date: "2026-04-15",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1503454537845-b83146933a1b?w=800&h=500&fit=crop",
+    image: siteImages.classroom,
   },
   {
     slug: "benefits-nature-based-learning",
@@ -346,7 +353,7 @@ export const blogPosts = [
     category: "Child Development",
     date: "2026-04-01",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&h=500&fit=crop",
+    image: siteImages.outdoor,
   },
   {
     slug: "premium-nutrition-preschoolers",
@@ -356,7 +363,7 @@ export const blogPosts = [
     category: "Nutrition",
     date: "2026-03-18",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=800&h=500&fit=crop",
+    image: siteImages.nutrition,
   },
   {
     slug: "spring-activities-kansas-city-families",
@@ -366,7 +373,7 @@ export const blogPosts = [
     category: "Local Family Activities",
     date: "2026-03-05",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=500&fit=crop",
+    image: siteImages.childrenLearning,
   },
 ];
 

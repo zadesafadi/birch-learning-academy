@@ -28,10 +28,12 @@ export function getLocalBusinessSchema() {
     },
     priceRange: "$$$",
     areaServed: [
-      "Leawood, KS",
-      "Overland Park, KS",
-      "Prairie Village, KS",
       "Johnson County, KS",
+      "Shawnee, KS",
+      "Overland Park, KS",
+      "Leawood, KS",
+      "Olathe, KS",
+      "Prairie Village, KS",
     ],
   };
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { values } from "@/lib/site-data";
+import { values, siteImages } from "@/lib/site-data";
 import { PageHero } from "@/components/shared/page-hero";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -15,12 +15,11 @@ export const metadata: Metadata = {
 };
 
 const facilityImages = [
-  { src: "https://images.unsplash.com/photo-1589391886646-a6395d0728bd?w=600&h=400&fit=crop", alt: "Natural light classroom with wood furniture" },
-  { src: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&h=400&fit=crop", alt: "Outdoor classroom and garden" },
-  { src: "https://images.unsplash.com/photo-1587654787591-70c8d94be832?w=600&h=400&fit=crop", alt: "Children in art studio" },
-  { src: "https://images.unsplash.com/photo-1503454537845-b83146933a1b?w=600&h=400&fit=crop", alt: "Indoor gross motor space" },
-  { src: "https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=600&h=400&fit=crop", alt: "Premium catered meal service" },
-  { src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop", alt: "Secure entry lobby" },
+  { src: siteImages.classroom, alt: "Natural light classroom with wood furniture" },
+  { src: siteImages.outdoor, alt: "Outdoor classroom and garden" },
+  { src: siteImages.art, alt: "Children in art studio" },
+  { src: siteImages.childrenLearning, alt: "Indoor gross motor space" },
+  { src: siteImages.nutrition, alt: "Premium catered meal service" },
 ];
 
 export default function AboutPage() {
@@ -34,14 +33,25 @@ export default function AboutPage() {
       <Section background="cream" id="leadership">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
           <AnimateInView>
-            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto lg:max-w-none sticky top-36">
-              <Image
-                src="/images/founders.png"
-                alt="Zade Safadi and Deanna Elkadri, founders of Birch Learning Academy"
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none sticky top-36">
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src={siteImages.zade}
+                  alt="Zade Safadi, Co-Founder of Birch Learning Academy"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 45vw, 25vw"
+                />
+              </div>
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src={siteImages.deanna}
+                  alt="Deanna Elkadri, Co-Founder of Birch Learning Academy"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 45vw, 25vw"
+                />
+              </div>
             </div>
           </AnimateInView>
 
@@ -148,7 +158,7 @@ export default function AboutPage() {
 
       <Section background="cream" id="facility">
         <SectionHeading title="Our Facility" subtitle="Designed to inspire wonder at every turn" />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {facilityImages.map((img, index) => (
             <AnimateInView key={img.alt} delay={index * 0.05}>
               <div className="relative aspect-[3/2] rounded-xl overflow-hidden shadow-md group">

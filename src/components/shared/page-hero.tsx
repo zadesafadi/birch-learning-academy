@@ -10,14 +10,18 @@ interface PageHeroProps {
 export function PageHero({
   title,
   subtitle,
-  image = "https://images.unsplash.com/photo-1503454537845-b83146933a1b?w=1920&h=600&fit=crop",
+  image = "/images/hero.jpg",
   imageAlt = "Birch Learning Academy",
 }: PageHeroProps) {
   return (
     <section
-      className="relative pb-20 md:pb-28 overflow-hidden"
+      className="relative pb-20 md:pb-28 overflow-hidden bg-sage-dark"
       style={{ paddingTop: "calc(var(--site-top-offset) + 2rem)" }}
     >
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-sage-dark via-sage to-charcoal/80"
+        aria-hidden="true"
+      />
       <div className="absolute inset-0">
         <Image
           src={image}

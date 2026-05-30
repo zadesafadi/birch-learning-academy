@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { programs } from "@/lib/site-data";
+import { programs, siteImages } from "@/lib/site-data";
 import { PageHero } from "@/components/shared/page-hero";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -22,7 +22,7 @@ export default function ProgramsPage() {
       <PageHero
         title="Our Programs"
         subtitle="Purposeful, play-based learning for children ages 2.5 to 5"
-        image="https://images.unsplash.com/photo-1587654787591-70c8d94be832?w=1920&h=600&fit=crop"
+        image={siteImages.programs}
         imageAlt="Children engaged in learning activities at Birch Learning Academy"
       />
 

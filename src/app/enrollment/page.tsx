@@ -5,6 +5,7 @@ import {
   tuitionTable,
   includedInTuition,
   faqs,
+  siteImages,
 } from "@/lib/site-data";
 import { PageHero } from "@/components/shared/page-hero";
 import { Section } from "@/components/ui/section";
@@ -30,7 +31,7 @@ export default function EnrollmentPage() {
       <PageHero
         title="Enrollment & Tuition"
         subtitle="Transparent pricing. Simple process. No surprises."
-        image="https://images.unsplash.com/photo-1589391886646-a6395d0728bd?w=1920&h=600&fit=crop"
+        image={siteImages.classroom}
         imageAlt="Enrollment at Birch Learning Academy"
       />
 

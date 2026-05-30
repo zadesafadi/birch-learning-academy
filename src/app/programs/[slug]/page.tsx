@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { programs } from "@/lib/site-data";
+import { programs, siteImages } from "@/lib/site-data";
 import { PageHero } from "@/components/shared/page-hero";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -12,8 +12,8 @@ import { CTASection } from "@/components/shared/cta-section";
 import { JsonLd, getBreadcrumbSchema } from "@/lib/seo";
 
 const programImages: Record<string, string> = {
-  preschool: "https://images.unsplash.com/photo-1589391886646-a6395d0728bd?w=1920&h=600&fit=crop",
-  "pre-k": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1920&h=600&fit=crop",
+  preschool: siteImages.classroom,
+  "pre-k": siteImages.outdoor,
 };
 
 export function generateStaticParams() {
@@ -155,7 +155,7 @@ export default async function ProgramPage({
           <AnimateInView>
             <h2 className="font-serif text-3xl text-charcoal mb-4">Enrichment Included</h2>
             <p className="text-charcoal/70 max-w-2xl mx-auto mb-8">
-              Spanish, music & movement, yoga, art studio, and premium catered nutrition—all
+              Music & movement, yoga, art studio, and premium catered nutrition—all
               included in your tuition. No hidden fees.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

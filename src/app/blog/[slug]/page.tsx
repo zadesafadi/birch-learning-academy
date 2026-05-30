@@ -84,8 +84,7 @@ export default async function BlogPostPage({
               boutique, nature-inspired approach makes.
             </p>
             <p>
-              Whether you&apos;re exploring preschool in Overland Park, Leawood,
-              or Pre-K programs across the Kansas City metro, we hope
+              Whether you&apos;re exploring preschool anywhere in Johnson County, we hope
               this resource helps you make an informed, confident choice for your family.
             </p>
           </div>

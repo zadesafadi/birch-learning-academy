@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { siteConfig, faqs } from "@/lib/site-data";
+import { siteConfig, faqs, siteImages } from "@/lib/site-data";
 import { PageHero } from "@/components/shared/page-hero";
 import { Section } from "@/components/ui/section";
 import { ContactForm } from "@/components/shared/contact-form";
@@ -10,7 +10,7 @@ import { AnimateInView } from "@/components/ui/animate-in-view";
 export const metadata: Metadata = {
   title: "Contact & Schedule a Tour",
   description:
-    "Schedule a private tour of Birch Learning Academy in Leawood, KS. Contact us today to see our nature-inspired early learning center.",
+    "Schedule a private tour of Birch Learning Academy in Johnson County, KS. Contact us today to see our nature-inspired early learning center.",
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
       <PageHero
         title="Schedule a Tour"
         subtitle="We'd love to show you around and answer all your questions"
-        image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1920&h=600&fit=crop"
+        image={siteImages.classroom}
         imageAlt="Welcome to Birch Learning Academy"
       />
 
@@ -68,7 +68,7 @@ export default function ContactPage() {
                 <MapPin className="h-10 w-10 text-sage mb-4" />
                 <p className="font-serif text-xl text-charcoal mb-2">Campus Location</p>
                 <p className="text-charcoal/70 text-sm leading-relaxed max-w-xs">
-                  Our Leawood / Overland Park area campus address will be announced soon.
+                  Our Johnson County campus address will be announced soon.
                   Call us to schedule a tour in the meantime.
                 </p>
               </div>

@@ -30,13 +30,13 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: [
     "daycare Johnson County KS",
-    "preschool Overland Park",
-    "child care Leawood",
-    "Montessori preschool Kansas City",
+    "preschool Johnson County KS",
+    "child care Johnson County",
+    "preschool Shawnee KS",
     "nature-based childcare",
     "preschool ages 2.5 to 5",
     "Pre-K program Kansas City",
-    "best daycare Overland Park",
+    "best daycare Johnson County",
   ],
   openGraph: {
     type: "website",

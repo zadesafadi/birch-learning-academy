@@ -1,15 +1,15 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
-import { siteConfig } from "@/lib/site-data";
+import { siteConfig, siteImages } from "@/lib/site-data";
 import { Button } from "@/components/ui/button";
 import { AnimateInView } from "@/components/ui/animate-in-view";
 
 export function CTASection() {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
+    <section className="relative py-24 md:py-32 overflow-hidden bg-sage">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1920&h=800&fit=crop"
+          src={siteImages.outdoor}
           alt="Children learning outdoors at Birch Learning Academy"
           fill
           className="object-cover"

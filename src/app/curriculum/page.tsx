@@ -152,8 +152,8 @@ export default function CurriculumPage() {
               Experience Curriculum gives Birch a rigorous, standards-aligned foundation.
               Our boutique model ensures it is executed the way it was designed— with
               instructor-led academic preparation layered on top of play-based discovery,
-              daily Spanish enrichment, and nature-inspired learning that you won&apos;t
-              find in a franchise center running the same system at 1:12 ratios.
+              and nature-inspired learning that you won&apos;t find in a franchise center
+              running the same system at 1:12 ratios.
             </p>
             <p className="text-charcoal/70 leading-relaxed text-lg">
               For the 2025–2026 school year, Experience Curriculum includes enhanced
@@ -202,9 +202,9 @@ export default function CurriculumPage() {
               delivered in a classroom small enough for every child to be known.
             </p>
             <p className="text-charcoal/70 leading-relaxed">
-              Our Pre-K graduates enter Blue Valley, Shawnee Mission, and Olathe schools
-              confident, curious, and academically prepared. Parents stay connected every
-              step of the way through Brightwheel.
+              Our Pre-K graduates enter kindergarten across Johnson County school
+              districts confident, curious, and academically prepared. Parents stay
+              connected every step of the way through Brightwheel.
             </p>
           </div>
         </AnimateInView>

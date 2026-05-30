@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Shield, Heart, GraduationCap, AlertTriangle, Users, Thermometer } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
+import { siteImages } from "@/lib/site-data";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Card } from "@/components/ui/card";
@@ -82,7 +83,7 @@ export default function SafetyPage() {
       <PageHero
         title="Safety & Security"
         subtitle="Your child's safety is our highest priority — every single day"
-        image="https://images.unsplash.com/photo-1503454537845-b83146933a1b?w=1920&h=600&fit=crop"
+        image={siteImages.childrenLearning}
         imageAlt="Safe learning environment at Birch Learning Academy"
       />
 

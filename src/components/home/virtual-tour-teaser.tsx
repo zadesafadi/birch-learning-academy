@@ -3,6 +3,7 @@ import { Play } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { AnimateInView } from "@/components/ui/animate-in-view";
 import { Button } from "@/components/ui/button";
+import { siteImages } from "@/lib/site-data";
 
 export function VirtualTourTeaser() {
   return (
@@ -11,7 +12,7 @@ export function VirtualTourTeaser() {
         <AnimateInView>
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
             <Image
-              src="https://images.unsplash.com/photo-1589391886646-a6395d0728bd?w=800&h=500&fit=crop"
+              src={siteImages.classroom}
               alt="Bright, natural-light classroom at Birch Learning Academy"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -35,7 +36,7 @@ export function VirtualTourTeaser() {
           <p className="text-charcoal/70 leading-relaxed mb-6">
             Explore our nature-inspired classrooms, outdoor learning spaces, art
             studio, and bright learning spaces from the comfort of your home. See
-            why families across Overland Park and Leawood choose Birch.
+            why families across Johnson County choose Birch.
           </p>
           <Button href="/contact" variant="secondary">
             Take a Virtual Tour

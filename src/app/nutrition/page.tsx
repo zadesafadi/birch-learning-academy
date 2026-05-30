@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/shared/page-hero";
+import { siteImages } from "@/lib/site-data";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Card } from "@/components/ui/card";
@@ -25,7 +26,7 @@ export default function NutritionPage() {
       <PageHero
         title="Premium Nutrition"
         subtitle="Catered meals and organic snacks throughout the day—included in tuition"
-        image="https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=1920&h=600&fit=crop"
+        image={siteImages.nutrition}
         imageAlt="Fresh organic meals served at Birch Learning Academy"
       />
 
@@ -49,7 +50,7 @@ export default function NutritionPage() {
           <AnimateInView>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto lg:max-w-none">
               <Image
-                src="https://images.unsplash.com/photo-1498837167922-ddd27525cd34?w=800&h=600&fit=crop"
+                src={siteImages.nutrition}
                 alt="Premium catered organic meals for children"
                 fill
                 className="object-cover"
