@@ -26,7 +26,7 @@ export function WelcomeSection() {
             </p>
             <p>
               We are intentionally not a commercial franchise. Serving families across
-              Serving families across the Johnson County area, Birch Learning Academy
+              the Johnson County area, Birch Learning Academy
               is a private-pay, boutique micro-academy engineered for families who refuse
               to compromise on early education. Our curriculum is built on Brightwheel&apos;s
               Experience Curriculum—a research-based, standards-aligned system—delivered with
