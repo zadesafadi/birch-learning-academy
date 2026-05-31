@@ -10,7 +10,7 @@ export function TrustBar() {
   }));
 
   return (
-    <div className="bg-white border-y border-birch py-4 overflow-hidden">
+    <div className="bg-white border-y border-birch py-3 sm:py-4 overflow-hidden">
       <div className="flex animate-marquee whitespace-nowrap">
         {[...items, ...items].map((item, index) => (
           <div

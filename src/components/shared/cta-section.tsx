@@ -12,7 +12,7 @@ interface CTASectionProps {
 
 export function CTASection({ animatedBackground = false }: CTASectionProps) {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden bg-sage">
+    <section className="relative py-16 md:py-32 overflow-hidden bg-sage">
       <div className="absolute inset-0">
         {animatedBackground ? (
           <HeroAnimatedBackground subtle />
@@ -32,10 +32,10 @@ export function CTASection({ animatedBackground = false }: CTASectionProps) {
 
       <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
         <AnimateInView>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white font-medium mb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium mb-3 sm:mb-4">
             Ready to See the Birch Difference?
           </h2>
-          <p className="text-white/90 text-lg mb-8 leading-relaxed">
+          <p className="text-white/90 text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
             Schedule your private tour today. We can&apos;t wait to meet your
             family.
           </p>

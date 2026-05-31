@@ -57,6 +57,18 @@ body {
   animation: marquee 30s linear infinite;
 }
 
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 50s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
 @keyframes fade-in-up {
   from {
     opacity: 0;

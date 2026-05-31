@@ -27,12 +27,12 @@ export function DifferentiatorsGrid() {
         title="The Birch Difference"
         subtitle="What sets us apart from every other center in Johnson County."
       />
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
         {differentiators.map((item, index) => {
           const Icon = iconMap[item.icon] || Leaf;
           return (
             <AnimateInView key={item.title} delay={index * 0.08}>
-              <div className="text-center p-6">
+              <div className="text-center p-4 sm:p-6">
                 <div className="inline-flex p-4 rounded-2xl bg-sage/10 text-sage mb-4">
                   <Icon className="h-8 w-8" />
                 </div>
